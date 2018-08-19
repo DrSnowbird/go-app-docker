@@ -13,6 +13,11 @@ cp example/*.go ./app/
 ./build.sh
 ./run.sh
 ```
+# Using docker-compose.yml
+```
+docker-compose up -d
+firefox 127.0.0.1:18000
+```
 
 # Other docker-based IDE
 * [openkbs/eclipse-photon-docker](https://hub.docker.com/r/openkbs/eclipse-photon-docker/)

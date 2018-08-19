@@ -247,7 +247,7 @@ cleanup
 #### run restart options: { no, on-failure, unless-stopped, always }
 RESTART_OPTION=no
 
-docker run -it \
+docker run -d --rm \
     --name=${instanceName} \
     --restart=${RESTART_OPTION} \
     ${privilegedString} \
@@ -255,5 +255,5 @@ docker run -it \
     ${PORT_MAP} \
     ${imageTag} $*
 
-cleanup
+
 

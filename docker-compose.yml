@@ -3,15 +3,16 @@ services:
   go-app-docker:
     image: openkbs/go-app-docker
     build:
-      context: ./Dockerfile
+      context: .
+      dockerfile: Dockerfile
     container_name: go-app-docker
     environment:
       - USER_ID=${USER_ID:-1000}
       - GROUP_ID=${GROUP_ID:-1000}
     env_file:
-      - ./docker.env
-#    ports:
-#      - 8080:8080
+      - .env
+    ports:
+      - 18000:8000
     volumes:
       - ./workspace:/home/developer/workspace
 

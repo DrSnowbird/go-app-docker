@@ -15,5 +15,8 @@ RUN mkdir -p ${SRC_DIR}
 ADD ./app ${SRC_DIR}
 RUN cd $SRC_DIR; go build -o myapp; cp myapp /app/
 
+VOLUME /app
+WORKDIR /app
+
 ENTRYPOINT ["./myapp"]
 
