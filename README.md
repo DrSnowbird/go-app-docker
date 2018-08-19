@@ -19,6 +19,11 @@ docker-compose up -d
 firefox 127.0.0.1:18000
 ```
 
+# Using test-hello-go.sh
+```
+./test-hello.go.sh 1
+./test-hello.go.sh 2
+```
 # Other docker-based IDE
 * [openkbs/eclipse-photon-docker](https://hub.docker.com/r/openkbs/eclipse-photon-docker/)
 * [openkbs/eclipse-oxygen-docker](https://hub.docker.com/r/openkbs/eclipse-oxygen-docker/)
